@@ -58,7 +58,7 @@ export default function Profile() {
     try {
       setDeleteBookId(bookId);
 
-      const response = await fetch(`${API_URL}/books/${bookId}`, {
+      const response = await fetch(`https://bookworm-backend-api-9f3x.onrender.com/api/books/${bookId}`, {
         method: "DELETE",
         headers: { Authorization: `Bearer ${token}` },
       });
